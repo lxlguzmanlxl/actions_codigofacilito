@@ -1,0 +1,13 @@
+name: "Deploy to Codigofacilito"
+on: 
+  push:
+    branches: ["master"]
+
+jobs:
+  deploy-codigofacilito:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Hacemos pull del codigofacilito"
+      run: echo "Correr migraciones"
+      run: echo "Gnerrar binario"
+      run: echo "Publicar versión"
